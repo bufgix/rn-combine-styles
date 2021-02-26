@@ -2,13 +2,22 @@
   "name": "rn-combine-style",
   "version": "1.0.0",
   "description": "A small utility that combine react native styles",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "author": "bufgix",
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "react-native",
+    "styles",
+    "combine",
+    "utility"
+  ],
   "scripts": {
-    "start": "tsc",
-    "test": "jest --config jestconfig.json"
+    "build": "tsc",
+    "test": "jest --config jestconfig.json",
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn test"
   },
   "dependencies": {
     "react-native": "^0.63.4"
