@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "lib": ["esnext"],
+    "target": "ES2019",
+    "lib": ["ES2019"],
     "module": "commonjs",
     "declaration": true,
     "outDir": "./lib",

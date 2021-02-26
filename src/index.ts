@@ -9,7 +9,7 @@ type PairCallback = (arg0: {
 }) => void;
 type Condition = [Style, Boolean];
 
-export function cn(...args: Array<Condition | Style>): Style[] {
+export default function cs(...args: Array<Condition | Style>): Style[] {
   return args.reduce((memo: Style[] = [], item: any) => {
     if (!item) return memo;
 

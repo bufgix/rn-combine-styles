@@ -7,13 +7,17 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "tsc"
+    "start": "tsc",
+    "test": "jest --config jestconfig.json"
   },
   "dependencies": {
     "react-native": "^0.63.4"
   },
   "devDependencies": {
+    "@types/jest": "^26.0.20",
     "@types/react-native": "^0.63.50",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.2",
     "typescript": "^4.2.2"
   }
 }
